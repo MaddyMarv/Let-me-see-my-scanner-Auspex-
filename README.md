@@ -1,16 +1,6 @@
-Let Me See My Scanner
+### [Let Me See My Scanner (Auspex)](https://www.nexusmods.com/warhammer40kdarktide/mods/632)
+**The short version:** Fades out your crosshair and other HUD elements while you are holding the auspex scanner.
 
-Hides or fades your HUD when you use the auspex scanner so you can actually see what you're scanning. Only affects your own scanner, not other players.
+**The details:** Standalone mod that automatically fades or hides things like your crosshair, stamina bar, and buff icons the second you pull out the auspex. Trying to read the scanner while you have HUD elements blocking it is annoying. You can adjust the transparency amount and fade speed so the scanner is much easier to read in a fight.
 
-Settings
-- Transparency Amount: How see-through the HUD gets (0-1, default 0.3)
-- Smooth Fade: Makes things fade in/out smoothly instead of instantly
-- Fade Duration: How long the fade takes (0.05-2 seconds)
-- Caption Opacity: How visible subtitles are while scanning (0-1)
-
-Let me know any issues!
-Thank you,
-Maddy
-
-If you like my work, please donate!
-https://ko-fi.com/indicabunny
+🔗 **Links:** [Source Code](https://github.com/MaddyMarv/Let-me-see-my-scanner-Auspex-) | [Nexus Mods Profile](https://www.nexusmods.com/profile/indicabunny) | [Support Me on Ko-fi](https://ko-fi.com/indicabunny)
