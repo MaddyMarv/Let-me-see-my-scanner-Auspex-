@@ -52,9 +52,9 @@ return {
                 },
             },
             {
-                setting_id = "toggle_visibility_header",
+                setting_id = "vanilla_visibility_header",
                 type = "group",
-                title = "toggle_visibility_header",
+                title = "vanilla_visibility_header",
                 tab = mod:localize("tab_visibility"),
                 sub_widgets = {
                     {
@@ -79,13 +79,6 @@ return {
                         tooltip = "hide_dodge_counter_description",
                     },
                     {
-                        setting_id = "hide_hudelementdodgecount",
-                        type = "checkbox",
-                        default_value = true,
-                        title = "hide_dodge_count",
-                        tooltip = "hide_dodge_count_description",
-                    },
-                    {
                         setting_id = "hide_hudelementstamina",
                         type = "checkbox",
                         default_value = true,
@@ -105,6 +98,35 @@ return {
                         default_value = true,
                         title = "hide_buff_bars",
                         tooltip = "hide_buff_bars_description",
+                    },
+                },
+            },
+            {
+                setting_id = "modded_visibility_header",
+                type = "group",
+                title = "modded_visibility_header",
+                tab = mod:localize("tab_visibility"),
+                sub_widgets = {
+                    {
+                        setting_id = "hide_hudelementdodgecount",
+                        type = "checkbox",
+                        default_value = true,
+                        title = "hide_dodge_count",
+                        tooltip = "hide_dodge_count_description",
+                    },
+                    {
+                        setting_id = "hide_ringhud",
+                        type = "checkbox",
+                        default_value = true,
+                        title = "hide_ringhud",
+                        tooltip = "hide_ringhud_description",
+                    },
+                    {
+                        setting_id = "hide_flux",
+                        type = "checkbox",
+                        default_value = true,
+                        title = "hide_flux",
+                        tooltip = "hide_flux_description",
                     },
                 },
             },
