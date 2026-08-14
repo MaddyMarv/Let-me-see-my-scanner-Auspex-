@@ -63,7 +63,7 @@ return {
         en = "Hide or fade the crosshair HUD overlay while using the auspex scanner.",
     },
     hide_dodge_counter = {
-        en = "Hide Dodge Counter (Vanilla)",
+        en = "Hide Dodge Counter",
     },
     hide_dodge_counter_description = {
         en = "Hide or fade the vanilla dodge counter bar display while using the auspex scanner.",

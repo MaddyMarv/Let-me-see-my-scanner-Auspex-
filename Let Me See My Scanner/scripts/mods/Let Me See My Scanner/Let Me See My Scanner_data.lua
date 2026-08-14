@@ -65,13 +65,6 @@ return {
                         tooltip = "hide_crosshair_description",
                     },
                     {
-                        setting_id = "hide_hudelementcrosshairhud",
-                        type = "checkbox",
-                        default_value = true,
-                        title = "hide_crosshair_hud",
-                        tooltip = "hide_crosshair_hud_description",
-                    },
-                    {
                         setting_id = "hide_hudelementdodgecounter",
                         type = "checkbox",
                         default_value = true,
@@ -107,6 +100,13 @@ return {
                 title = "modded_visibility_header",
                 tab = mod:localize("tab_visibility"),
                 sub_widgets = {
+                    {
+                        setting_id = "hide_hudelementcrosshairhud",
+                        type = "checkbox",
+                        default_value = true,
+                        title = "hide_crosshair_hud",
+                        tooltip = "hide_crosshair_hud_description",
+                    },
                     {
                         setting_id = "hide_hudelementdodgecount",
                         type = "checkbox",
