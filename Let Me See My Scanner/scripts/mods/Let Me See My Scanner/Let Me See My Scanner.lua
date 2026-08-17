@@ -62,6 +62,10 @@ local function is_ringhud(class_name)
     return type(class_name) == "string" and string.find(class_name, "^HudElementRingHud") ~= nil
 end
 
+local function is_ability_timer(class_name)
+    return type(class_name) == "string" and string.find(class_name, "^HudElementAbilityTimer") ~= nil
+end
+
 local function should_hide_element(class_name)
     if _EXCLUDED_ELEMENTS[class_name] then
         return false
@@ -102,6 +106,14 @@ local function should_hide_element(class_name)
 
     if is_ringhud(class_name) then
         local should = mod:get("hide_ringhud")
+        if should == nil then
+            return true
+        end
+        return should == true
+    end
+
+    if is_ability_timer(class_name) then
+        local should = mod:get("hide_ability_timer")
         if should == nil then
             return true
         end
@@ -277,7 +289,7 @@ local function _set_crosshair_visible(show)
     end
 
     for class_name, _ in pairs(hud._elements or {}) do
-        if is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name) then
+        if is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name) or is_ability_timer(class_name) then
             affect_element(class_name)
         end
     end
@@ -285,7 +297,7 @@ local function _set_crosshair_visible(show)
     local ce = Managers.ui and Managers.ui:ui_constant_elements()
     if ce then
         for class_name, _ in pairs(ce._elements or {}) do
-            if is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name) then
+            if is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name) or is_ability_timer(class_name) then
                 affect_element(class_name)
             end
         end
@@ -425,7 +437,7 @@ local function _apply_current_alpha()
     end
 
     for class_name, _ in pairs(hud._elements or {}) do
-        if (is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name)) then
+        if (is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name) or is_ability_timer(class_name)) then
             local element = hud:element(class_name)
             if element then
                 set_alpha(element, class_name)
@@ -436,7 +448,7 @@ local function _apply_current_alpha()
     local ce = Managers.ui and Managers.ui:ui_constant_elements()
     if ce and ce._elements then
         for class_name, element in pairs(ce._elements) do
-            if (is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name)) and element then
+            if (is_buff_bar(class_name) or is_ability_icon(class_name) or is_flux_hud(class_name) or is_ringhud(class_name) or is_ability_timer(class_name)) and element then
                 set_alpha(element, class_name)
             end
         end

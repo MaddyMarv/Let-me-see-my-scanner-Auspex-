@@ -104,4 +104,10 @@ return {
     hide_flux_description = {
         en = "Hide or fade the Flux HUD overlay while using the auspex scanner.",
     },
+    hide_ability_timer = {
+        en = "Hide Ability Timer",
+    },
+    hide_ability_timer_description = {
+        en = "Hide or fade the Ability Timer HUD while using the auspex scanner.",
+    },
 }

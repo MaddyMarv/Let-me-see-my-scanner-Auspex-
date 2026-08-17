@@ -128,6 +128,13 @@ return {
                         title = "hide_flux",
                         tooltip = "hide_flux_description",
                     },
+                    {
+                        setting_id = "hide_ability_timer",
+                        type = "checkbox",
+                        default_value = true,
+                        title = "hide_ability_timer",
+                        tooltip = "hide_ability_timer_description",
+                    },
                 },
             },
         },
