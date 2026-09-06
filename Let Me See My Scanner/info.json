@@ -7,7 +7,7 @@
     "funding": {
         "kofi": "https://ko-fi.com/indicabunny"
     },
-    "description": "Fades out your crosshair and other HUD elements while you are holding the auspex scanner.",
+    "description": "Fades or hides distracting HUD elements (crosshair, stamina bar, buffs) while using the Auspex scanner.",
     "dependencies": {
         "required": [],
         "self_after": [],

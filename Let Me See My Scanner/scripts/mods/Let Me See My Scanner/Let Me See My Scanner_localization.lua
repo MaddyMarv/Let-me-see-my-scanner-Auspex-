@@ -3,7 +3,7 @@ return {
         en = "Let Me See My Scanner",
     },
     mod_description = {
-        en = "Hide or fade selected HUD elements while using the auspex (includes smooth fade and configurable opacity).",
+        en = "Fades or hides distracting HUD elements (crosshair, stamina bar, buffs) while using the Auspex scanner.",
     },
     caption_opacity = {
         en = "Caption opacity while scanning",
