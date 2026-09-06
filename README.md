@@ -11,6 +11,6 @@ Standalone mod that automatically fades or hides things like your crosshair, sta
 
 **Visibility**
 - Hide Vanilla Elements (Crosshair, Dodge Counter, Stamina Bar, Ability Icons, Buff Bars)
-- Hide Modded Elements (Crosshair HUD, Dodge Count [Numeric UI], RingHud, Flux HUD, Ability Timer)
+- Hide Modded Elements (Crosshair HUD, Dodge Count (Numeric UI), RingHud, Flux HUD, Ability Timer)
 
 🔗 **Links:** [Source Code](https://github.com/MaddyMarv/Let-me-see-my-scanner-Auspex-) | [Nexus Mods Profile](https://www.nexusmods.com/profile/indicabunny) | [Support Me on Ko-fi](https://ko-fi.com/indicabunny)
