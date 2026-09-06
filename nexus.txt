@@ -1,0 +1,15 @@
+Standalone mod that automatically fades or hides things like your crosshair, stamina bar, and buff icons the second you pull out the auspex. Trying to read the scanner while you have HUD elements blocking it is annoying. You can adjust the transparency amount and fade speed so the scanner is much easier to read in a fight.
+
+[b]Options:[/b]
+
+[b]General[/b]
+- Transparency Amount
+- Smooth Fade
+- Fade Duration
+- Caption Opacity While Scanning
+
+[b]Visibility[/b]
+- Hide Vanilla Elements (Crosshair, Dodge Counter, Stamina Bar, Ability Icons, Buff Bars)
+- Hide Modded Elements (Crosshair HUD, Dodge Count (Numeric UI), RingHud, Flux HUD, Ability Timer)
+
+[b]Links:[/b] [url=https://github.com/MaddyMarv/Let-me-see-my-scanner-Auspex-]Source Code[/url] | [url=https://www.nexusmods.com/profile/indicabunny]Nexus Mods Profile[/url] | [url=https://ko-fi.com/indicabunny]Support Me on Ko-fi[/url]
