@@ -4,6 +4,8 @@
 Standalone mod that automatically fades or hides things like your crosshair, stamina bar, and buff icons the second you pull out the auspex. Trying to read the scanner while you have HUD elements blocking it is annoying. You can adjust the transparency amount and fade speed so the scanner is much easier to read in a fight.
 
 **Options:**
+
+**General**
 - Transparency Amount
 - Smooth Fade
 - Fade Duration
