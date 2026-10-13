@@ -462,6 +462,7 @@ local function _apply_current_alpha()
 end
 
 local function _fade_update(dt)
+    if not mod:is_enabled() then return end
     if not mod._fade_target then return end
     dt = dt or 0
     if dt == 0 then
@@ -481,3 +482,19 @@ end
 
 mod.on_update = _fade_update
 mod.update = _fade_update
+
+local function _restore_hud_alphas()
+    mod._scan_active = false
+    mod._fade_target = nil
+    mod._current_alpha = 1
+    _set_crosshair_visible(true)
+    _apply_current_alpha()
+end
+
+mod.on_disabled = function(is_first_call)
+    _restore_hud_alphas()
+end
+
+mod.on_unload = function(exit_game)
+    _restore_hud_alphas()
+end
